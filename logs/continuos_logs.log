@@ -110,3 +110,161 @@ zipfile.BadZipFile: File is not a zip file
 [2025-01-24 20:29:00,452: INFO: common: created directory at: artifacts]
 [2025-01-24 20:29:00,453: INFO: common: created directory at: artifacts/data_transformation]
 [2025-01-24 20:29:13,916: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 21:42:09,046: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 21:42:27,891: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 21:42:27,924: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:42:27,974: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:42:28,017: INFO: common: created directory at: artifacts]
+[2025-01-24 21:42:28,019: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 21:42:28,052: INFO: data_ingestion: File already exits]
+[2025-01-24 21:42:28,699: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 21:42:28,699: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 21:42:28,704: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:42:28,709: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:42:28,734: INFO: common: created directory at: artifacts]
+[2025-01-24 21:42:28,735: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 21:42:36,904: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 21:42:36,905: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 21:42:37,069: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:42:37,071: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:42:37,073: INFO: common: created directory at: artifacts]
+[2025-01-24 21:42:37,073: ERROR: main: 'ConfigurationManager' object has no attribute 'params']
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 46, in get_model_trainer_config
+    params=self.params.TrainingArguments
+AttributeError: 'ConfigurationManager' object has no attribute 'params'
+[2025-01-24 21:47:24,836: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 21:47:28,148: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 21:47:28,178: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:47:28,204: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:47:28,216: INFO: common: created directory at: artifacts]
+[2025-01-24 21:47:28,217: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 21:47:28,218: INFO: data_ingestion: File already exits]
+[2025-01-24 21:47:28,707: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 21:47:28,707: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 21:47:28,712: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:47:28,717: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:47:28,718: INFO: common: created directory at: artifacts]
+[2025-01-24 21:47:28,719: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 21:47:34,512: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 21:47:34,513: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 21:47:34,544: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:47:34,547: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:47:34,547: INFO: common: created directory at: artifacts]
+[2025-01-24 21:47:34,548: INFO: common: created directory at: artifacts/model_trainer]
+[2025-01-24 21:47:34,549: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 50, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-01-24 21:58:16,742: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 21:58:22,251: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 21:58:22,327: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:58:22,408: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:58:22,421: INFO: common: created directory at: artifacts]
+[2025-01-24 21:58:22,421: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 21:58:22,422: INFO: data_ingestion: File already exits]
+[2025-01-24 21:58:23,044: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 21:58:23,045: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 21:58:23,051: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:58:23,055: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:58:23,055: INFO: common: created directory at: artifacts]
+[2025-01-24 21:58:23,056: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 21:58:28,463: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 21:58:28,464: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 21:58:28,472: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 21:58:28,476: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 21:58:28,525: INFO: common: created directory at: artifacts]
+[2025-01-24 21:58:28,617: INFO: common: created directory at: artifacts/model_trainer]
+[2025-01-24 21:58:28,618: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 54, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-01-24 22:07:39,578: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 22:07:41,896: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 22:07:41,920: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:07:41,944: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:07:41,957: INFO: common: created directory at: artifacts]
+[2025-01-24 22:07:41,958: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 22:07:41,959: INFO: data_ingestion: File already exits]
+[2025-01-24 22:07:42,395: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 22:07:42,395: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 22:07:42,401: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:07:42,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:07:42,405: INFO: common: created directory at: artifacts]
+[2025-01-24 22:07:42,407: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 22:07:46,678: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 22:07:46,678: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 22:07:46,684: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:07:46,687: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:07:46,688: INFO: common: created directory at: artifacts]
+[2025-01-24 22:07:46,690: INFO: common: created directory at: artifacts/model_trainer]
+[2025-01-24 22:07:46,691: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 54, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-01-24 22:16:03,252: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 22:16:06,024: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 22:16:06,051: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:16:06,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:16:06,108: INFO: common: created directory at: artifacts]
+[2025-01-24 22:16:06,109: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 22:16:06,110: INFO: data_ingestion: File already exits]
+[2025-01-24 22:16:06,527: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 22:16:06,527: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 22:16:06,534: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:16:06,538: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:16:06,539: INFO: common: created directory at: artifacts]
+[2025-01-24 22:16:06,539: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 22:16:13,362: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 22:16:13,363: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 22:16:13,369: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:16:13,374: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:16:13,375: INFO: common: created directory at: artifacts]
+[2025-01-24 22:16:13,377: INFO: common: created directory at: artifacts/model_trainer]
+[2025-01-24 22:16:13,379: ERROR: main: ModelTrainerConfig() takes no arguments]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 37, in <module>
+    model_trainer_pipeline.initiate_model_trainer()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_3_model_trainer_pipeline.py", line 10, in initiate_model_trainer
+    model_trainer_config = config.get_model_trainer_config()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 54, in get_model_trainer_config
+    model_trainer_config=ModelTrainerConfig(
+TypeError: ModelTrainerConfig() takes no arguments
+[2025-01-24 22:24:48,808: INFO: config: PyTorch version 2.5.1 available.]
+[2025-01-24 22:24:51,053: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 22:24:51,079: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:24:51,105: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:24:51,117: INFO: common: created directory at: artifacts]
+[2025-01-24 22:24:51,118: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 22:24:51,119: INFO: data_ingestion: File already exits]
+[2025-01-24 22:24:51,540: INFO: main: Stage Data Ingestion stage Completed]
+[2025-01-24 22:24:51,540: INFO: main: stage Data Transformation stage initiated]
+[2025-01-24 22:24:51,545: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:24:51,548: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:24:51,549: INFO: common: created directory at: artifacts]
+[2025-01-24 22:24:51,549: INFO: common: created directory at: artifacts/data_transformation]
+[2025-01-24 22:24:56,861: INFO: main: Stage Data Transformation stage Completed]
+[2025-01-24 22:24:56,861: INFO: main: stage Model Trainer stage initiated]
+[2025-01-24 22:24:56,866: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 22:24:56,869: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 22:24:56,870: INFO: common: created directory at: artifacts]
+[2025-01-24 22:24:56,871: INFO: common: created directory at: artifacts/model_trainer]
