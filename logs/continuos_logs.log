@@ -1,0 +1,98 @@
+[2025-01-24 19:33:00,213: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 19:33:00,222: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 19:33:00,223: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 19:33:00,224: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 15, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 11, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "E:\Epita\Projects\Text_summary_project\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-24 19:37:08,847: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 19:37:08,853: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 19:37:08,854: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 19:37:08,855: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 15, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 12, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "E:\Epita\Projects\Text_summary_project\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-24 19:39:02,357: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 19:39:02,363: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 19:39:02,365: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 19:39:02,365: ERROR: main: yaml file is empty]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 29, in read_yaml
+    return ConfigBox(content)
+  File "box\\box.py", line 295, in box.box.Box.__init__
+box.exceptions.BoxValueError: First argument must be mapping or iterable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 15, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 11, in initiate_data_ingestion
+    config=ConfigurationManager()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\config\configuration.py", line 13, in __init__
+    self.paramss=read_yaml(params_filepath)
+  File "E:\Epita\Projects\Text_summary_project\venv\lib\site-packages\ensure\main.py", line 872, in __call__
+    return_val = self.f(*args, **kwargs)
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\utils\common.py", line 31, in read_yaml
+    raise ValueError("yaml file is empty")
+ValueError: yaml file is empty
+[2025-01-24 19:39:53,941: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 19:39:53,946: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 19:39:53,951: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 19:39:53,983: INFO: common: created directory at: artifacts]
+[2025-01-24 19:39:53,986: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 19:39:55,251: INFO: data_ingestion: File is downloaded]
+[2025-01-24 19:39:55,252: ERROR: main: File is not a zip file]
+Traceback (most recent call last):
+  File "E:\Epita\Projects\Text_summary_project\main.py", line 15, in <module>
+    data_ingestion_pipeline.initiate_data_ingestion()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\pipeline\stage_1_data_ingestion_pipeline.py", line 16, in initiate_data_ingestion
+    data_ingestion.extract_zip_file()
+  File "E:\Epita\Projects\Text_summary_project\src\textSummarizer\components\data_ingestion.py", line 31, in extract_zip_file
+    with zipfile.ZipFile(self.config.local_data_file, 'r') as zip_ref:
+  File "E:\Epita\Projects\Text_summary_project\venv\lib\zipfile.py", line 1258, in __init__
+    self._RealGetContents()
+  File "E:\Epita\Projects\Text_summary_project\venv\lib\zipfile.py", line 1325, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
+[2025-01-24 19:44:25,581: INFO: main: stage Data Ingestion stage initiated]
+[2025-01-24 19:44:25,610: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-01-24 19:44:25,615: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-01-24 19:44:25,635: INFO: common: created directory at: artifacts]
+[2025-01-24 19:44:25,637: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-01-24 19:44:27,975: INFO: data_ingestion: File is downloaded]
+[2025-01-24 19:44:28,334: INFO: main: Stage Data Ingestion stage Completed]
